@@ -16,4 +16,9 @@ class Shell implements ShellContract
     {
         return new ShellCommand($command);
     }
+    
+    public static function deferred(string $command): ShellCommand
+    {
+        return new ShellCommand($command, true);
+    }
 }
