@@ -1,0 +1,29 @@
+{
+    "name": "taylornetwork/laravel-shell",
+    "require": {
+        "php": ">=7.3",
+        "illuminate/support": "^7.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam Taylor",
+            "email": "sam@taylornetwork.ca"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TaylorNetwork\\Shell\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TaylorNetwork\\Shell\\ShellServiceProvider"
+            ],
+            "aliases": {
+                "Shell": "TaylorNetwork\\Shell\\Facades\\ShellFacade"
+            }
+        }
+    }
+}
